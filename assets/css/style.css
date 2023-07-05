@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
@@ -18,7 +18,8 @@ header {
     justify-content: space-between;
     gap: 50px;
     align-items: center;
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    width: 100vw;
     margin: 0 auto;
 }
 
@@ -89,71 +90,43 @@ nav ul li a {
     padding: 50px 0;
   }
   
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
   
-  .about-us h2 {
+  .h2text {
     font-size: 24px;
     margin-bottom: 20px;
     border-bottom: 2px solid #B62828;
     padding-bottom: 10px;
+    max-width: 200px;
+    text-align: center;
+    margin: auto;
   }
   
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  .contenta{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin-left: auto;
   }
-  
-  .text {
-    flex: 1 0 50%;
+  .text{
     padding: 20px;
     text-align: left;
   }
-  
+  .aboutp{
+    border-top: 2px solid #B62828;
+    padding-top: 10px;
+  }
   .image {
-    flex: 1 0 50%;
-    padding: 20px;
-    text-align: right;
+    padding-top: 20px;
+    padding-left: 50px;
   }
   
   .image img {
-    max-width: 100%;
-    height: auto;
+    max-width: 500px;
+    height: 220px;
   }
   
-  @media only screen and (max-width: 768px) {
-    .content {
-      flex-direction: column;
-    }
   
-    .text, .image {
-      flex: 1 0 100%;
-    }
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .social-icons {
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 30px;
-    }
-    .content-container {
-      max-width: 90%;
-    }
-    
-    .content-container h2 {
-      font-size: 28px;
-    }
-    
-    .content-container p {
-      font-size: 16px;
-    }
-  }
   
 /* Hamburger Menu Styles */
 
@@ -165,21 +138,46 @@ nav ul li a {
     cursor: pointer;
     display: none;
 }
-/* @media only screen and (max-width: 768px){
-    nav ul {
-        display: none;
-    }
-    .container{
-        display: flex;
-        gap: 10px;
-        justify-content: space-evenly;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-} */
+@media screen(max-width:768px) {
+  .contenta {
+    padding: 20px;
+    display: grid;
+    gap: 100px;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 768px) 
+{
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.content-container {
+  max-width: 90%;
+}
+.content {
+  flex-direction: column;
+}
 
-@media only screen and (max-width: 768px) {
+
+.text, .image {
+  flex: 1 0 100%;
+}
+.menuimg{
+  display: grid;
+  margin: 70px;
+  gap: 20px;
+  }
+
+.content-container h2 {
+  font-size: 28px;
+}
+
+.content-container p {
+  font-size: 16px;
+}
+
     .container {
         display: flex;
         gap: 50px;
@@ -187,9 +185,6 @@ nav ul li a {
         max-width: 1200px;
         margin: 0 auto;
     }
-    .social-icons {
-        /* display: none; */
-      }
     .menu-icon {
         display: block;
     }
@@ -211,4 +206,60 @@ nav ul li a {
     .menu-toggle:checked~nav ul {
         display: flex;
     }
+}
+
+
+/* ------------------------------ */
+.menuep{
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.menuimg{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 70px;
+gap: 20px;
+/* grid-template-rows: 1fr 1fr ; */
+}
+.menuit{
+  
+  display: flex;
+}
+.menuit img{
+  width: 200px;
+  height: 200px;
+}
+.menutext{
+padding: 10px;
+max-width: 200px;
+}
+.menuh3{
+color: #F2C94C;
+padding-bottom: 10px;
+}
+.menup2{
+
+}
+.galleyimg{
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.galley2{
+  display: flex;
+  gap: 10px;
+}
+.findus{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 70px;
+}
+.last{
+  /* margin: 50px; */
+  display: flex;
+  justify-content: space-around;
 }
