@@ -61,7 +61,7 @@ nav ul li a {
 }
 
 .main-content {
-    background-image: url('/assets/image/pizza1.png');
+    background-image: url('https://umeshjyani.github.io/pizza//assets/image/pizza1.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
